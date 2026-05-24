@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 20px;
+}
+
+/* Header Banner Utama */
+.judul {
+    background-color: #5bc0de;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.judul h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.judul h2 {
+    margin: 5px 0 0 0;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+/* ==================== STYLING NAVBAR DROPDOWN ==================== */
+.navbar {
+    background-color: #5bc0de;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.navbar a, .dropdown .dropbtn {
+    float: left;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border: none;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    cursor: pointer;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #31b0d5;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 220px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 99;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #eeeeee;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* ==================== STYLING TABEL & TOMBOL ==================== */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background-color: white;
+}
+
+.table th, .table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.tombol {
+    display: inline-block;
+    padding: 8px 12px;
+    background-color: #5bc0de;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.tombol:hover {
+    background-color: #31b0d5;
+}
+
+.edit, .hapus {
+    text-decoration: none;
+    color: #337ab7;
+}
+
+.edit:hover, .hapus:hover {
+    text-decoration: underline;
+}
