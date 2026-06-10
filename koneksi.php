@@ -1,14 +1,14 @@
 <?php
-$host = "localhost";
-$username = "root";
+$host     = "localhost";
+$user     = "root";
 $password = "";
-$database = "gudang_si"; // <-- SUDAH DIUBAH DI SINI (Sebelumnya si_gudang)
+$database = "db_inventory";
 
-// Membuat koneksi ke database
-$koneksi = mysqli_connect($host, $username, $password, $database);
+$koneksi = mysqli_connect($host, $user, $password, $database);
 
-// Cek apakah koneksi berhasil atau gagal
-if (!$koneksi) {
-    die("Koneksi ke database gagal: " . mysqli_connect_error());
+if(!$koneksi){
+    die("Koneksi gagal: " . mysqli_connect_error());
 }
+
+$conn = $koneksi;
 ?>
