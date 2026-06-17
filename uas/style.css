@@ -1,0 +1,183 @@
+/* ==========================================
+   1. RESET & DASAR (ADMINLTE STYLE)
+   ========================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #ecf0f5; /* Background abu-abu terang di belakang kotak putih */
+    color: #333;
+}
+
+/* ==========================================
+   2. STRUKTUR DASHBOARD (LAYOUT UTAMA)
+   ========================================== */
+.dashboard-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* --- SIDEBAR (Samping Kiri - Biru Navy) --- */
+.sidebar {
+    width: 230px;
+    background-color: #222d32; /* Warna Navy Gelap */
+    color: #b8c7ce;
+    position: fixed;
+    height: 100vh;
+    z-index: 1000;
+}
+
+/* Area Logo "SALES STOCK" */
+.sidebar-brand {
+    height: 50px;
+    background-color: #3c8dbc; /* Biru cerah di area logo */
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.sidebar-menu {
+    list-style: none;
+    padding: 10px 0;
+}
+
+.menu-section {
+    font-size: 12px;
+    color: #4b646f;
+    background: #1a2226;
+    padding: 10px 15px;
+    text-transform: uppercase;
+}
+
+.sidebar-menu li a {
+    color: #b8c7ce;
+    text-decoration: none;
+    padding: 12px 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.sidebar-menu li a:hover {
+    background-color: #1e282c;
+    color: #fff;
+    border-left: 3px solid #3c8dbc;
+}
+
+/* --- MAIN LAYOUT (Area Kanan) --- */
+.main-layout {
+    flex: 1;
+    margin-left: 230px; /* Geser area ini agar tidak tertutup sidebar */
+}
+
+/* --- TOP HEADER (Atas - Putih Bersih) --- */
+.top-header {
+    background-color: #ffffff;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1); /* Bayangan tipis di bawah navbar */
+}
+
+.header-title {
+    font-size: 14px;
+    color: #666;
+}
+
+/* ==========================================
+   3. AREA KONTEN & TABEL (CYAN STYLE)
+   ========================================== */
+.main-content {
+    padding: 20px;
+}
+
+/* Kotak Putih Pembungkus Tabel (Card) */
+.card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 3px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    border-top: 3px solid #d2d6de; /* Garis abu-abu di atas kotak putih */
+}
+
+.card h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+/* Styling Tabel */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+/* Header Tabel Berwarna CYAN */
+.table th {
+    background-color: #4dc3d4; /* Warna CYAN sesuai gambar */
+    color: #ffffff;
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #f4f4f4;
+    font-size: 14px;
+}
+
+.table td {
+    padding: 10px;
+    border: 1px solid #f4f4f4;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Baris selang-seling */
+.table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* ==========================================
+   4. TOMBOL & IKON AKSI
+   ========================================== */
+.btn-primary {
+    background-color: #3c8dbc;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 3px;
+    text-decoration: none;
+    font-size: 14px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+/* Ikon Kotak Aksi (Edit & Hapus) */
+.action-icon {
+    width: 28px;
+    height: 28px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border-radius: 3px;
+    text-decoration: none;
+    margin-right: 5px;
+}
+
+.bg-blue { background-color: #3c8dbc; } /* Untuk Edit */
+.bg-red { background-color: #dd4b39; }  /* Untuk Hapus */
+
+/* Agar link di sidebar logout warnanya merah saat dihover */
+.logout-item a:hover {
+    background-color: #dd4b39 !important;
+    color: white !important;
+}
